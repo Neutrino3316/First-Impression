@@ -1,3 +1,6 @@
+# ignore dataset
+data/*
+
 # ignore pycharm settings
 # .idea/*
 
