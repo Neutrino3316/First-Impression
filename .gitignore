@@ -1,5 +1,7 @@
 # ignore dataset
 data/*
+ImageData/*
+unzippedData/*
 
 # ignore pycharm settings
 # .idea/*
