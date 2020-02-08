@@ -9,16 +9,15 @@ import pickle
 
 if __name__ == "__main__":
 
-
     warnings.filterwarnings("ignore")
 
     LEARNING_RATE = 0.0005
-    BATCH_SIZE = 25
+    BATCH_SIZE = 1
     N_EPOCHS = 2
     REG_PENALTY = 0
     PER = 0.2
-    NUM_IMAGES = 599900
-    NUM_TEST_IMAGES = 199900
+    NUM_IMAGES = 10000
+    NUM_TEST_IMAGES = 1000
 
     imgs = tf.placeholder('float', [None, 224, 224, 3], name="image_placeholder")
     values = tf.placeholder('float', [None, 5], name="value_placeholder")

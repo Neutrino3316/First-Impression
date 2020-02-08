@@ -50,7 +50,8 @@ if __name__ == "__main__":
     train_filename = 'train_full.tfrecords'  # address to save the TFRecords file
     # open the TFRecords file
     writer = tf.python_io.TFRecordWriter(train_filename)
-    for i in range(len(train_addrs)):
+    for i in range(10000):
+    # for i in range(len(train_addrs)):
         # print how many images are saved every 1000 images
         if not i % 1000:
             print('Train data: {}/{}'.format(i, len(train_addrs)))
@@ -89,7 +90,8 @@ if __name__ == "__main__":
     # open the TFRecords file
     writer = tf.python_io.TFRecordWriter(val_filename)
 
-    for i in range(len(val_addrs)):
+    for i in range(1000):
+    # for i in range(len(val_addrs)):
         # print how many images are saved every 1000 images
         if not i % 1000:
             print('Val data: {}/{}'.format(i, len(val_addrs)))
