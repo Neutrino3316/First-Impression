@@ -2,6 +2,7 @@
 data/*
 ImageData/*
 unzippedData/*
+VoiceData/*
 
 # ignore pycharm settings
 # .idea/*
